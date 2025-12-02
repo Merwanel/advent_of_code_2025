@@ -1,0 +1,7 @@
+def read_lines(file_path):
+    """
+    Reads a file line by line and yields each line stripped of leading/trailing whitespace.
+    """
+    with open(file_path, 'r') as f:
+        for line in f:
+            yield line.strip()
